@@ -1,17 +1,6 @@
-{
-    "builds": [
-      {
-        "src": "src/**/*",
-        "use": "@vercel/node"
-      }
-    ],
-    "scripts": {
-      "build": "vite build"
-    },
-    "rewrites":[
-      {
-        "sources":"/(.*)","destination":"/"
-      }
-    ]
+{"rewrites":[
+  {
+    "sources":"/(.*)","destination":"/"
   }
-  
+]
+}
