@@ -46,6 +46,10 @@ const Login = (props) => {
         checkUserData(); 
     };
 
+    const handle=()=>{
+        navigate('/sign');
+    }
+
     return (
         <div id="login">
             <h1 style={{ color: "black" }}>Login</h1>
@@ -72,7 +76,7 @@ const Login = (props) => {
                 <button type="submit" id="sub">Login</button>
             </form>
             <div>
-                Don't have an account? <a href="/sign" style={{ textDecoration: "underline" }}>Sign up</a>
+                Don't have an account? <a href="/sign"  onClick={handle}   style={{ textDecoration: "underline" }}>Sign up</a>
             </div>
         </div>
     );
